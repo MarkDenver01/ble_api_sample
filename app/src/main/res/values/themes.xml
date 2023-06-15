@@ -1,0 +1,125 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/pallet_03</item>
+        <item name="colorPrimaryDark">@color/pallet_04</item>
+        <item name="colorAccent">@color/pallet_02</item>
+
+        <item name="android:textColor">@color/pallet_04</item>
+        <item name="android:navigationBarColor">@color/pallet_05</item>
+        <item name="android:statusBarColor">@color/pallet_05</item>
+        <item name="android:colorControlHighlight">@color/pallet_06</item>
+        <item name="colorControlHighlight">@color/pallet_06</item>
+        <item name="android:windowBackground">@color/pallet_01</item>
+
+        <item name="actionBarStyle">@style/Theme.MyApp.Top.ActionBar</item>
+        <item name="fontFamily">@font/noto_sans_jp_regular</item>
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+
+    <style name="Theme.MyApp.Top.ActionBar" parent="AppTheme">
+        <item name="elevation">0dp</item>
+        <item name="background">@color/pallet_03</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="UIEffect" parent="AppTheme">
+        <item name="colorControlHighlight">@color/pallet_06</item>
+    </style>
+
+    <!-- Hint text for EditText -->
+    <style name="Theme.MyApp.EditText.Hint" parent="AppTheme">
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textColor">@color/pallet_07</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <!-- EditText -->
+    <style name="Theme.MyApp.EditText" parent="AppTheme">
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textSize">19sp</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:background">@drawable/background_edittext</item>
+        <item name="android:inputType">text</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">48dp</item>
+    </style>
+
+    <style name="Theme.MyApp.Password.TextInputEditText" parent="AppTheme">
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textSize">19sp</item>
+        <item name="android:paddingStart">8dp</item>
+        <item name="android:paddingEnd">8dp</item>
+        <item name="android:background">@drawable/background_edittext</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:inputType">textPassword</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">48dp</item>
+    </style>
+
+    <!-- textfield and TextInputEditText for Password input -->
+    <style name="Theme.MyApp.Password.Textfield" parent="AppTheme">
+        <item name="hintEnabled">false</item>
+        <item name="passwordToggleEnabled">true</item>
+    </style>
+
+    <!-- Button 1 -->
+    <style name="Theme.MyApp.BorderlessButton.primary" parent="AppTheme">
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:textColor">@drawable/selector_text_color_white</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:background">@drawable/button_tap_effect_blue</item>
+    </style>
+    <!-- Button 2 -->
+    <style name="Theme.MyApp.BorderlessButton.secondary" parent="AppTheme">
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:textColor">@color/pallet_02</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:background">@drawable/button_tap_effect_white</item>
+    </style>
+    <!-- Button 3 (caution) -->
+    <style name="Theme.MyApp.BorderlessButton.warning" parent="AppTheme">
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:textColor">@color/pallet_01</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:background">@drawable/button_tap_effect_red</item>
+    </style>
+
+    <!-- Dialog Button -->
+    <style name="Theme.MyApp.BorderlessButton.popup.primary" parent="AppTheme">
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:textColor">@drawable/selector_text_color_blue</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:background">@drawable/button_tap_effect_lightgray</item>
+    </style>
+
+    <style name="Theme.MyApp.BorderlessButton.popup.warning" parent="AppTheme">
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:textColor">@color/pallet_09</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:background">@drawable/button_tap_effect_lightgray</item>
+    </style>
+
+    <style name="NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>
